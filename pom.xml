@@ -16,7 +16,7 @@
 	<modules>
 		<module>gitflow-module-1</module>
 	</modules>
-	
+
 	<build>
 		<plugins>
 			<plugin>
@@ -24,8 +24,20 @@
 				<artifactId>gitflow-maven-plugin</artifactId>
 				<version>1.13.0</version>
 				<configuration>
-					<!-- optional configuration -->
+					<installProject>false</installProject>
+					<verbose>false</verbose>
+					<gitFlowConfig>
+						<productionBranch>master</productionBranch>
+						<developmentBranch>dev</developmentBranch>
+						<featureBranchPrefix>feature/</featureBranchPrefix>
+						<releaseBranchPrefix>release/</releaseBranchPrefix>
+						<hotfixBranchPrefix>test/</hotfixBranchPrefix>
+						<supportBranchPrefix>support/</supportBranchPrefix>
+						<versionTagPrefix></versionTagPrefix>
+						<origin>origin</origin>
+					</gitFlowConfig>
 				</configuration>
+
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

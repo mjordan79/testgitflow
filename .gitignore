@@ -5,3 +5,4 @@
 
 # Apache Maven
 **/target/
+**/bin/
