@@ -26,6 +26,7 @@
 				<configuration>
 					<installProject>false</installProject>
 					<verbose>false</verbose>
+					<pushRemote>true</pushRemote>
 					<gitFlowConfig>
 						<productionBranch>master</productionBranch>
 						<developmentBranch>dev</developmentBranch>
