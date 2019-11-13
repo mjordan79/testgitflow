@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.digitalnucleus</groupId>
 	<artifactId>testgitflow</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1-newfeature-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<properties>
@@ -15,6 +15,9 @@
 
 	<modules>
 		<module>gitflow-module-1</module>
+		<module>gitflow-module-2</module>
+		<module>gitflow-module-3</module>
+		<module>gitflow-module-4</module>
 	</modules>
 
 	<build>

@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>com.digitalnucleus</groupId>
 		<artifactId>testgitflow</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.0.1-newfeature-SNAPSHOT</version>
 	</parent>
 	
 	<artifactId>gitflow-module-1</artifactId>
