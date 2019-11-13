@@ -15,6 +15,9 @@
 
 	<modules>
 		<module>gitflow-module-1</module>
+		<module>gitflow-module-2</module>
+		<module>gitflow-module-3</module>
+		<module>gitflow-module-4</module>
 	</modules>
 
 	<build>
