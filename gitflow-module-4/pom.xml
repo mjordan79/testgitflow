@@ -10,5 +10,6 @@
 	</parent>
 	
 	<artifactId>gitflow-module-4</artifactId>
+	<version>${revision}</version>
 	
 </project>
