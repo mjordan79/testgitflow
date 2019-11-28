@@ -23,6 +23,22 @@
 	<build>
 		<plugins>
 			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>flatten-maven-plugin</artifactId>
+				<version>1.1.0</version>
+				<configuration>
+				</configuration>
+				<executions>
+					<execution>
+						<id>flatten</id>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>flatten</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
 				<groupId>com.amashchenko.maven.plugin</groupId>
 				<artifactId>gitflow-maven-plugin</artifactId>
 				<version>1.13.0</version>
@@ -30,7 +46,9 @@
 					<installProject>false</installProject>
 					<verbose>true</verbose>
 					<pushRemote>true</pushRemote>
-					<preReleaseGoals>versions:set -DnewVersion=${project.version}-test</preReleaseGoals>
+					<versionProperty>revision</versionProperty>
+					<skipUpdateVersion>true</skipUpdateVersion>
+					<preReleaseGoals>flatten:flatten</preReleaseGoals>
 					<gitFlowConfig>
 						<productionBranch>master</productionBranch>
 						<developmentBranch>dev</developmentBranch>
@@ -42,7 +60,6 @@
 						<origin>origin</origin>
 					</gitFlowConfig>
 				</configuration>
-
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
