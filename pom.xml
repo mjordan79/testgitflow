@@ -30,7 +30,7 @@
 					<installProject>false</installProject>
 					<verbose>true</verbose>
 					<pushRemote>true</pushRemote>
-					<postReleaseGoals>versions:set -DnewVersion=${project.version}-test</postReleaseGoals>
+					<preReleaseGoals>versions:set -DnewVersion=${project.version}-test</preReleaseGoals>
 					<gitFlowConfig>
 						<productionBranch>master</productionBranch>
 						<developmentBranch>dev</developmentBranch>
