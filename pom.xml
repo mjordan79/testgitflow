@@ -28,8 +28,9 @@
 				<version>1.13.0</version>
 				<configuration>
 					<installProject>false</installProject>
-					<verbose>false</verbose>
+					<verbose>true</verbose>
 					<pushRemote>true</pushRemote>
+					<postReleaseGoals>versions:set -DnewVersion=${project.version}-test</postReleaseGoals>
 					<gitFlowConfig>
 						<productionBranch>master</productionBranch>
 						<developmentBranch>dev</developmentBranch>
